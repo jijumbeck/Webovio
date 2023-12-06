@@ -1,7 +1,95 @@
-h1 {
-    color:blue;
+:root {
+    --first-color: #FFF;
+    --second-color: #4D533C;
+
+    --link-color: #FFD723;
+
+    font-size: calc(0.4375em + 0.5vw);
+    font-weight: 400;
+    color: var(--second-color);
 }
 
-* {
-    background-color: brown;
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Poppins';
+}
+
+h1 {
+    color: var(--first-color);
+    font-size: 4.7rem;
+    font-weight: 700; 
+    line-height: 5rem;
+
+    margin: 0.37em 0em;
+}
+
+h2 {
+    color: var(--second-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+/* 
+*   Intro section style.
+*/
+
+header {
+    padding: 1.6em 13em;
+    display: flex;
+}
+
+.logo, .company-name {
+    height: calc(2vw + 00.4375em);
+}
+
+@media (max-width: 550px) {
+    header {
+        justify-content: center;
+    }
+}
+
+.intro {
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-position: 70%;
+
+    height: 100vh;
+}
+
+.intro-section {
+    color: var(--first-color);
+
+    padding: 20em 5em 6em 5em;
+}
+
+.intro-section h1 + p {
+    margin-bottom: 2.8em;
+}
+
+@media (min-width: 768px) {
+    .intro-section {
+        padding: 14em 30em 6em 8em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .intro-section {
+        padding: 7.75em 55em 40em 13em;
+    }
+}
+
+
+
+.social-media-container {
+    height: 50px;
+}
+
+.social-media-container * {
+    height: 100%;
 }
