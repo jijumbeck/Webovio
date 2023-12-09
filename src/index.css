@@ -4,11 +4,13 @@
 
     --link-color: #FFD723;
     --link-secondary-color: #D4D6D4;
-    --pale-color: #21384299;
+    --pale-black-color: #21384299;
 
     --footer-background-color: #4F553D;
     --footer-color: #B6C197;
     --hr-color: #5D6544;
+
+    --pale-white-color: #FAFAFA;
 
     font-size: calc(0.4375em + 0.5vw);
     font-weight: 400;
@@ -152,7 +154,7 @@ header {
     height: 82px;
     padding: 1.43em 0 4em 0;
 
-    color: var(--pale-color);
+    color: var(--pale-black-color);
 }
 
 .phase-card a {
@@ -175,7 +177,7 @@ header {
 
 @media (min-width: 1020px) {
     .deation {
-        padding: 9.3em 10.25em 10em 10.25em;
+        padding: 9.3em 10.25em 0em 10.25em;
     }
 
     .phase-container {
@@ -189,6 +191,48 @@ header {
 
 
 
+/*
+*   Call to action Section.
+*/
+
+.call-to-action {
+    background-color: var(--pale-white-color);
+    box-shadow: 50px 130px 100px 0px rgba(0, 0, 0, 0.15);
+
+    padding: 4.375em 18em 4.375em 10.25em;
+
+    position: relative;
+    top: 11.875em;
+}
+
+.call-to-action h1 {
+    color: var(--second-color);
+
+    width: 100%;
+    margin-bottom: 0.83em;
+}
+
+.call-to-action a {
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: var(--link-secondary-color)
+}
+
+.call-to-action a:hover {
+    color: var(--link-color);
+}
+
+@media (min-width: 1280px) {
+    .call-to-action {
+        margin-right: 10.3em;
+    }
+
+    .call-to-action h1 {
+        width: 13.7em;
+    }
+}
 
 
 
@@ -216,7 +260,7 @@ header {
 
 @media (min-width: 1280px) {
     .all-info {
-        padding: 7.75em 13em 1em 13em;
+        padding: 19.375em 13em 1em 13em;
     }
 }
 
@@ -278,7 +322,7 @@ hr {
     gap: 23px;
 }
 
-.web-contacts > p {
+.web-contacts>p {
     line-height: 1.6em;
 }
 
@@ -296,7 +340,7 @@ hr {
 
 .social-media-link {
     margin: 0;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .social-media-link:hover img,
