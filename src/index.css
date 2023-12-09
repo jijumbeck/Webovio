@@ -249,7 +249,7 @@ header {
     font-weight: 400;
     line-height: 2.5rem;
 
-    padding: 20em 5em 0 5em;
+    padding: 20em 5em 1.8em 5em;
 }
 
 @media (min-width: 768px) {
@@ -260,7 +260,7 @@ header {
 
 @media (min-width: 1280px) {
     .all-info {
-        padding: 19.375em 13em 1em 13em;
+        padding: 19.375em 13em 1.8em 13em;
     }
 }
 
@@ -289,15 +289,17 @@ header {
 
 .footer-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     margin: 3.125em 0;
 }
 
 .vl {
-    border-left: 1px solid var(--hr-color);
-    width: 1px;
-    background-color: var(--hr-color);
+    border-top: 1px solid var(--hr-color);
+    height: 1px;
+    width: 100%;
+    margin: 3.125em 0;
 }
 
 hr {
@@ -308,7 +310,25 @@ hr {
     display: flex;
     justify-content: space-between;
 
-    width: 41.5em;
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .vl {
+        border-left: 1px solid var(--hr-color);
+        width: 1px;
+        background-color: var(--hr-color);
+    }
+
+    .info {
+        width: 41.5em;
+    }
 }
 
 .web-contacts {
